@@ -16,11 +16,13 @@
     "verify",
     "verification",
     "human",
-    "computer"
+    "computer",
+    "no",
+    "captcha"
   ],
   "author": {
     "name": "Tobias Gurtzick",
-    "email": "magic@wizardtales.com",
+    "email": "magic@wizardtales.com"
   },
   "license": "MIT",
   "devDependencies": {

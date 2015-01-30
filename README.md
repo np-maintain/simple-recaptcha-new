@@ -1,6 +1,6 @@
 # simple reCAPTCHA
 
-[![Build Status](https://travis-ci.org/zeMirco/simple-recaptcha.png)](https://travis-ci.org/zeMirco/simple-recaptcha)
+[![Build Status](https://travis-ci.org/np-maintain/simple-recaptcha-new.svg)](https://travis-ci.org/np-maintain/simple-recaptcha-new)
 
 Implements Google's [reCAPTCHA](https://developers.google.com/recaptcha/) in node.js. Can be used with pure node.js or in combination with express.js. Doesn't require additional libraries, just core `http` module.
 
@@ -11,7 +11,7 @@ Implements Google's [reCAPTCHA](https://developers.google.com/recaptcha/) in nod
 - keep `recaptcha_challenge_field` and `recaptcha_response_field` as names for the input fields
 
 ```bash
-$ npm install simple-recaptcha
+$ npm install simple-recaptcha-new
 ```
 
 ## Usage with express.js
@@ -19,7 +19,7 @@ $ npm install simple-recaptcha
 Returns an error when something is wrong. If no error is present just go ahead.
 
 ```js
-var simple_recaptcha = require('simple-recaptcha');
+var simple_recaptcha = require('simple-recaptcha-new');
 
 app.post('/', function(req, res) {
   
@@ -49,6 +49,10 @@ $ npm test
 ```
 
 ## License
+
+[MIT](https://github.com/np-maintain/simple-recaptcha-new/blob/master/LICENSE)
+
+Change of the simple-recaptcha module.
 
 Copyright (C) 2012 [Mirco Zeiss](mailto: mirco.zeiss@gmail.com)
 

@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/np-maintain/simple-recaptcha-new.svg)](https://travis-ci.org/np-maintain/simple-recaptcha-new)
 
-Implements Google's [reCAPTCHA](https://developers.google.com/recaptcha/) in node.js. Can be used with pure node.js or in combination with express.js. Doesn't require additional libraries, just core `http` module.
+Implements Google's new ["No reCAPTCHA"](https://developers.google.com/recaptcha/) in node.js. Can be used with pure node.js or in combination with express.js. Doesn't require additional libraries, just core `http` module.
 
 ## Installation
 

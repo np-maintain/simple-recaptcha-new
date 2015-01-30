@@ -9,7 +9,6 @@ Implements Google's new ["No reCAPTCHA"](https://developers.google.com/recaptcha
 
 - sign up for an [API key](https://www.google.com/recaptcha/admin/create)
 - follow [instructions](https://developers.google.com/recaptcha/docs/display#Standard) to set up the client
-- keep `recaptcha_challenge_field` and `recaptcha_response_field` as names for the input fields
 
 ```bash
 $ npm install simple-recaptcha-new

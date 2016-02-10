@@ -22,11 +22,11 @@ Returns an error when something is wrong. If no error is present just go ahead.
 var simple_recaptcha = require('simple-recaptcha-new');
 
 app.post('/', function(req, res) {
-  
+
   var privateKey = '1234567890abcdef'; // your private key here
-  var ip = req.ip;
+  var ip = req.ip; // this is an optional parameter
   var response = req.body['g-recaptcha-response'];
-      
+
   simple_recaptcha(privateKey, ip, response, function(err) {
     if (err) return res.send(err.message);
     res.send('verified');

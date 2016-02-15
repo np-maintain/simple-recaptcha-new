@@ -24,13 +24,22 @@ var simple_recaptcha = require('simple-recaptcha-new');
 app.post('/', function(req, res) {
 
   var privateKey = '1234567890abcdef'; // your private key here
-  var ip = req.ip; // this is an optional parameter, you can omit if necessary
+  var ip = req.ip; // this is an optional parameter
   var response = req.body['g-recaptcha-response'];
 
   simple_recaptcha(privateKey, ip, response, function(err) {
     if (err) return res.send(err.message);
     res.send('verified');
   });
+});
+```
+
+You can also omit the ip since it is optional and pass in just 3 params.
+
+```js
+simple_recaptcha(privateKey, response, function(err) {
+  if (err) return res.send(err.message);
+  res.send('verified');
 });
 ```
 

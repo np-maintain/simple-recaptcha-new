@@ -22,4 +22,10 @@ describe('simple_recaptcha', function() {
     });
   });
 
+  it('should not return an error when ip is not provided', function(){
+    simple_recaptcha('privKey', 'someResponse', function(err) {
+      err.message.should.equal(null);
+    });
+  });
+
 });

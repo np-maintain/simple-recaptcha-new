@@ -24,7 +24,7 @@ var simple_recaptcha = require('simple-recaptcha-new');
 app.post('/', function(req, res) {
 
   var privateKey = '1234567890abcdef'; // your private key here
-  var ip = req.ip; // this is an optional parameter
+  var ip = req.ip; // this is an optional parameter, you can omit if necessary
   var response = req.body['g-recaptcha-response'];
 
   simple_recaptcha(privateKey, ip, response, function(err) {

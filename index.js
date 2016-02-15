@@ -11,6 +11,12 @@ var options = {
 };
 
 module.exports = function(privateKey, remoteIP, response, cb) {
+  if( arguments.length < 4 && typeof(response) === 'function') {
+    cb = response;
+    response = remoteIP;
+    remoteIP = undefined;
+  }
+
   var error = null;
 
   if (!privateKey) {
